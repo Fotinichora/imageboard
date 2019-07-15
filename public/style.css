@@ -1,0 +1,178 @@
+HTML {
+  height: 100%;
+  font-size: 10px;
+  }
+
+BODY {
+  background: radial-gradient(4rem,
+    rgba(255,255,255,0) 80%,
+    #778691 80%, #778691 99%,
+    rgba(255,255,255, 0)
+    ) 0 0,
+    radial-gradient(4rem,
+    rgba(255,255,255,0) 80%,
+    #778691 80%, #778691 99%,
+    rgba(255,255,255, 0)
+    ) 4em 4em,
+    radial-gradient(4.7rem,
+    rgba(255,255,255,0) 50%,
+    #B1C2B3 50%,
+    #B1C2B3 75%, #B1C2B3 99%,
+    rgba(255,255,255, 0)
+    ) 4em 4em,
+    radial-gradient(4.7rem,
+    rgba(255,255,255,0) 50%,
+    #B1C2B3 50%,
+    #F5FCD0 75%, #B1C2B3 99%,
+    rgba(255,255,255, 0)
+    ) 0 0;
+  background-size: 8rem 8rem;
+  background-color: #F5FCD0;
+  }
+
+.h1{
+  font-family: Snell Roundhand, cursive;
+  font-size: 50px;
+  color: #2F4F4F;
+}
+
+.myform{
+  font-family: Snell Roundhand, cursive;
+  font-size: 40px;
+  color: #2F4F4F;
+}
+
+.item{
+  font-family: Snell Roundhand, cursive;
+  width: 250px;
+  height: 250px;
+  font-size: 20px;
+  color: white;
+
+}
+
+.upload{
+background-color: #2F4F4F;
+font-family: Snell Roundhand, cursive;
+color: white;
+font-size: 20px;
+
+}
+
+.file{
+
+  font-family: Snell Roundhand, cursive;
+  color: #2F4F4F;
+  font-size: 20px;
+
+}
+
+
+
+
+
+  div.image-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+  }
+
+  div.image-container div {
+
+    text-align: center;
+    padding: 1em;
+	border: 12px solid transparent;
+	border-image: 16 repeating-linear-gradient(-25deg, AntiqueWhite  0, AntiqueWhite  1em, transparent 0, transparent 2em,
+	              #58a 0, #58a 3em, transparent 0, transparent 4em);
+
+	max-width: 20em;
+
+
+  }
+
+
+  div.image-container img {
+    margin-top: 1rem;
+    max-width: 20rem;
+    max-height: 30rem;
+  }
+
+
+
+
+
+
+  .modal-mask {
+position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+
+
+  margin: 0px auto;
+  padding: 15px 20px;
+  font-family: Snell Roundhand, cursive;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, .5);;
+  display: block;
+  width: 500px;
+  height: 500px;
+  overflow-y: scroll;
+  text-align: center;
+
+
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #2F4F4F;
+}
+
+
+
+
+
+
+.post{
+  background-color: rgba(0, 0, 0, .5);
+    color: white;
+
+}
+.modal-default-button {
+  position: relative;
+  float: right;
+  background-color: rgba(0, 0, 0, .5);
+    color: white;
+
+
+
+}
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
